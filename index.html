@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zale's first website</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            background-color: #121212; /* Dark Theme */
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #FF0000, #5865F2);
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid white;
+        }
+
+        h1 { margin-bottom: 5px; letter-spacing: 2px; }
+
+        .username { 
+            color: #888; 
+            margin-bottom: 30px; 
+            transition: 0.3s;
+        }
+        
+        /* This makes the username glow when you touch it */
+        .username:hover { color: #5865F2; cursor: pointer; }
+
+        .link {
+            text-decoration: none;
+            width: 100%;
+            max-width: 350px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Space between icon and text */
+        }
+
+        /* Colors */
+        .youtube { background-color: #FF0000; color: white; }
+        .discord { background-color: #5865F2; color: white; }
+        .roblox  { background-color: #393b3d; color: white; }
+
+        /* Hover Effect: Buttons grow slightly when touched */
+        .link:hover { 
+            transform: scale(1.05); 
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body>
+
+
+    <a href="https://youtube.com/@GoggerZale2007" class="link youtube">
+        <i class="fab fa-youtube"></i> YouTube
+    </a>
+
+    <a href="https://discord.gg/A4KZfGxmQM" class="link discord">
+        <i class="fab fa-discord"></i> Discord
+    </a>
+
+    <a href="https://www.roblox.com/users/10059910387/profile?friendshipSourceType=PlayerSearch" class="link roblox">
+        <i class="fas fa-gamepad"></i> Roblox
+    </a>
+
+</body>
+</html>
